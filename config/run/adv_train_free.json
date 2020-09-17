@@ -1,0 +1,18 @@
+{
+  "batch_size_train": 128,
+  "batch_size_eval": 256,
+  "num_epochs": 100,
+  "learning_rate": 0.1,
+  "learning_rate_scheduler": "cyclicLR",
+  "momentum": 0.9,
+  "weight_decay": 0.0005,
+  "dropout_rate": 0,
+  "adv_train_type": "free",
+  "epsilon_train": 8,
+  "alpha_train": 8,
+  "replays_train": 4,
+  "epsilon_eval": 8,
+  "alpha_eval": 2,
+  "restarts_eval": 1,
+  "attack_iters_eval": 5
+}

@@ -1,0 +1,7 @@
+{
+  "batch_size_eval": 256,
+  "epsilon_eval": 8,
+  "alpha_eval": 2,
+  "restarts_eval": 10,
+  "attack_iters_eval": 50
+}

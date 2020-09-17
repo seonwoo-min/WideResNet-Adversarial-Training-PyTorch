@@ -1,0 +1,10 @@
+{
+  "batch_size_train": 128,
+  "batch_size_eval": 256,
+  "num_epochs": 100,
+  "learning_rate": 0.1,
+  "learning_rate_scheduler": "cyclicLR",
+  "momentum": 0.9,
+  "weight_decay": 0.0005,
+  "dropout_rate": 0
+}
