@@ -1,0 +1,68 @@
+04-15 09:21:13	##### arguments #####
+04-15 09:21:13	dataset: cifar10
+04-15 09:21:13	model_config: config/model/wrn-40-8.json
+04-15 09:21:13	-- num_layer: 40
+04-15 09:21:13	-- widening_factor: 8
+04-15 09:21:13	run_config: config/run/adv_train_free.json
+04-15 09:21:13	-- batch_size_train: 128
+04-15 09:21:13	-- batch_size_eval: 256
+04-15 09:21:13	-- num_epochs: 100
+04-15 09:21:13	-- learning_rate: 0.1
+04-15 09:21:13	-- learning_rate_scheduler: cyclicLR
+04-15 09:21:13	-- momentum: 0.9
+04-15 09:21:13	-- weight_decay: 0.0005
+04-15 09:21:13	-- dropout_rate: 0
+04-15 09:21:13	-- adv_train_type: free
+04-15 09:21:13	-- epsilon_train: 8
+04-15 09:21:13	-- replays_train: 4
+04-15 09:21:13	-- epsilon_eval: 8
+04-15 09:21:13	-- alpha_eval: 2
+04-15 09:21:13	-- restarts_eval: 1
+04-15 09:21:13	-- attack_iters_eval: 5
+04-15 09:21:13	device: cuda (1 GPUs)
+04-15 09:21:13	output_path: results/cifar10/baselines/adversarial_free/wrn-40-8
+04-15 09:21:13	log_file: results/cifar10/baselines/adversarial_free/wrn-40-8/adv_train_wrn_log.txt
+
+04-15 09:21:13	start loading datasets: cifar10
+04-15 09:21:14	loaded 50000 dataset_train samples
+04-15 09:21:14	loaded 10000 dataset_test samples
+04-15 09:21:14	elapsed time: 0:00:01.200792
+
+04-15 09:21:14	start initializing a model
+04-15 09:21:14	end initializing a model
+04-15 09:21:14	elapsed time:0:00:00.517149
+
+04-15 09:21:14	start setting trainer configurations
+04-15 09:21:18	end setting trainer configurations
+04-15 09:21:18	elapsed time:0:00:04.021090
+
+04-15 09:21:18	start training a model
+04-15 09:21:18	ep	split	adv_loss	adv_acc	|	split	adv_loss	adv_acc
+04-15 09:43:45	001	train	2.1099	0.1990	|	test	1.8569	0.2471
+04-15 10:06:11	002	train	1.9264	0.2791	|	test	1.7030	0.2878
+04-15 10:28:37	003	train	1.7919	0.3265	|	test	1.5741	0.3188
+04-15 10:51:03	004	train	1.6539	0.3767	|	test	1.4854	0.3333
+04-15 11:13:29	005	train	1.5368	0.4186	|	test	1.4461	0.3563
+04-15 11:35:55	006	train	1.4391	0.4563	|	test	1.3625	0.3851
+04-15 11:58:21	007	train	1.3464	0.4944	|	test	1.2939	0.4063
+04-15 12:20:47	008	train	1.2662	0.5306	|	test	1.3255	0.3740
+04-15 12:43:13	009	train	1.1674	0.5726	|	test	1.2440	0.3800
+04-15 13:05:38	010	train	1.0475	0.6251	|	test	1.3618	0.3336
+04-15 13:28:03	011	train	0.9213	0.6821	|	test	1.3678	0.3195
+04-15 13:50:27	012	train	0.8255	0.7290	|	test	1.4726	0.3142
+04-15 14:12:52	013	train	0.8185	0.7373	|	test	1.4391	0.2992
+04-15 14:35:16	014	train	0.9303	0.6890	|	test	1.4320	0.3215
+04-15 14:57:39	015	train	1.0245	0.6439	|	test	1.3671	0.3467
+04-15 15:20:03	016	train	1.0921	0.6108	|	test	1.3065	0.3692
+04-15 15:42:26	017	train	1.1283	0.5901	|	test	1.3126	0.3754
+04-15 16:04:49	018	train	1.1574	0.5774	|	test	1.2324	0.3958
+04-15 16:27:12	019	train	1.1820	0.5610	|	test	1.2213	0.4125
+04-15 16:49:34	020	train	1.1847	0.5596	|	test	1.1752	0.4378
+04-15 17:11:57	021	train	1.1939	0.5520	|	test	1.1087	0.4660
+04-15 17:34:20	022	train	1.1961	0.5468	|	test	1.0793	0.4721
+04-15 17:56:43	023	train	1.1951	0.5429	|	test	1.0210	0.5049
+04-15 18:19:05	024	train	1.1778	0.5448	|	test	0.9377	0.5340
+04-15 18:41:28	025	train	1.1568	0.5503	|	test	0.8627	0.5728
+04-15 18:41:28	end training a model
+04-15 18:41:28	elapsed time:9:20:09.852201
+
